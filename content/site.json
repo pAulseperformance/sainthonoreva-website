@@ -1,0 +1,12 @@
+{
+  "name": "Saint Honoré",
+  "tagline": "Artisan Boulangerie",
+  "address": "Virginia, United States",
+  "email": "hello@sainthonoreva.com",
+  "copyright": "© 2026 Saint Honoré Artisan Boulangerie",
+  "hours": [
+    { "days": "Mon-Fri", "time": "7AM — 6PM" },
+    { "days": "Saturday", "time": "7AM — 5PM" },
+    { "days": "Sunday", "time": "8AM — 3PM" }
+  ]
+}

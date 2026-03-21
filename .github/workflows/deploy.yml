@@ -18,6 +18,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Build site from content
+        run: npm run build
+
       - name: Deploy to Cloudflare
         uses: cloudflare/wrangler-action@v3
         with:

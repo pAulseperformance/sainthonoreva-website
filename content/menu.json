@@ -1,0 +1,30 @@
+{
+  "description": "Baked fresh daily. Experience the distinct crust and flavor of our slow-fermented, naturally leavened dough.",
+  "items": [
+    {
+      "name": "Plain Boule",
+      "description": "Naturally leavened sourdough, slow-fermented",
+      "price": "$12"
+    },
+    {
+      "name": "Blueberry Lemon Boule",
+      "description": "Sourdough with fresh blueberries and lemon zest",
+      "price": "$15"
+    },
+    {
+      "name": "Garlic and Rosemary Boule",
+      "description": "Baked with roasted garlic and fragrant rosemary",
+      "price": "$15"
+    },
+    {
+      "name": "Bagels",
+      "description": "Plain, everything, or jalapeño cheddar (half dozen)",
+      "price": "$10"
+    },
+    {
+      "name": "Chocolate Chip Cookies",
+      "description": "Brown butter, sea salt, dark chocolate (8 count)",
+      "price": "$15"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "items": [
+    { "image": "/images/pastries.png", "alt": "Plain Boule", "caption": "Plain Boule" },
+    { "image": "/images/hero.png", "alt": "Blueberry Lemon Boule", "caption": "Blueberry Boule" },
+    { "image": "/images/pastries.png", "alt": "Garlic and Rosemary Boule", "caption": "Garlic Boule" },
+    { "image": "/images/craftsman.png", "alt": "Bagels", "caption": "Bagels" },
+    { "image": "/images/pastries.png", "alt": "Chocolate Chip Cookies", "caption": "Cookies" }
+  ]
+}
