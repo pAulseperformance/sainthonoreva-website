@@ -1,0 +1,18 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "saint-honore-va",
+  "compatibility_date": "2025-01-01",
+  "assets": {
+    "directory": "./public"
+  },
+  "routes": [
+    {
+      "pattern": "sainthonoreva.com",
+      "custom_domain": true
+    },
+    {
+      "pattern": "www.sainthonoreva.com",
+      "custom_domain": true
+    }
+  ]
+}

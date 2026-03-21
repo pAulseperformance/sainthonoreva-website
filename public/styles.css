@@ -1,0 +1,332 @@
+/* ===== Saint Honoré — "Modern Heirloom" Design System ===== */
+
+:root {
+  /* Colors */
+  --cream: #fbf9f5;
+  --cream-dark: #f5f3ef;
+  --taupe: #d1c5b8;
+  --taupe-dark: #7f766a;
+  --charcoal: #1b1c1a;
+  --charcoal-soft: #4d453c;
+  --primary: #705a44;
+  --white: #ffffff;
+
+  /* Typography */
+  --font-abramo: 'Abramo', 'Playfair Display', serif; /* Elegant high-contrast serif */
+  --font-display: 'Cormorant Garamond', serif; /* Classic serif */
+  --font-body: 'Manrope', sans-serif; /* Clean modern sans */
+  --font-script: 'Great Vibes', cursive; /* Flowing script for logo */
+
+  /* Spacing */
+  --section-pad: clamp(5rem, 12vw, 10rem);
+  --content-max: 1100px;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* ===== Reset & Base ===== */
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--cream);
+  color: var(--charcoal);
+  line-height: 1.7;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { display: block; max-width: 100%; height: auto; }
+a { color: inherit; text-decoration: none; }
+.text-center { text-align: center; }
+.mx-auto { margin-left: auto; margin-right: auto; }
+
+/* ===== Header (Top Nav) ===== */
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2.5rem 3.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.header__brand {
+  font-size: 1.5rem;
+  color: var(--charcoal);
+  display: flex;
+  align-items: baseline;
+  gap: 0.4rem;
+}
+
+.header__brand .abramo {
+  font-family: var(--font-abramo);
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+
+.header__brand .sans {
+  font-family: var(--font-body);
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.9rem;
+}
+
+.header__nav {
+  display: flex;
+  gap: 3rem;
+}
+
+.header__nav a {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--charcoal-soft);
+  transition: color 0.3s;
+  position: relative;
+}
+
+.header__nav a:hover {
+  color: var(--charcoal);
+}
+
+.nav__toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.nav__toggle span {
+  width: 24px; height: 1.5px; background: var(--charcoal);
+}
+
+/* ===== Hero Split ===== */
+
+.hero-split {
+  height: 100vh;
+  min-height: 800px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.hero__top {
+  flex: 50%;
+  background-color: var(--cream);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* The exact circular logo requested */
+.center-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: scaleIn 1.2s var(--ease-out) both;
+}
+
+.center-logo-image {
+  width: 420px;
+  max-width: 90vw;
+  height: auto;
+  mix-blend-mode: darken; /* perfectly blends any pale backgrounds together */
+}
+
+.hero__bottom {
+  flex: 50%;
+  width: 100%;
+}
+
+.hero__bottom img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* ===== Global Section Utilities ===== */
+.section { padding: var(--section-pad) 2rem; }
+.section__inner { max-width: var(--content-max); margin: 0 auto; }
+.section__label {
+  font-size: 0.75rem; letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--taupe-dark); display: block; margin-bottom: 1rem;
+}
+.section__title {
+  font-family: var(--font-display); font-size: 3rem; font-weight: 300;
+  color: var(--charcoal); letter-spacing: 0.05em;
+}
+.section__divider {
+  width: 40px; height: 1px; background: var(--taupe); margin: 2rem 0;
+}
+
+/* ===== About ===== */
+.about { background: var(--white); }
+.about__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6rem; align-items: center; }
+.about__text p {
+  color: var(--charcoal-soft); font-size: 1.05rem; line-height: 1.8; margin-bottom: 1.5rem;
+}
+.about__image img { width: 100%; height: 600px; object-fit: cover; }
+
+/* ===== Edit: Menu (The requested Two Column Layout) ===== */
+.menu { background: var(--cream); }
+.menu-inner { max-width: 900px; }
+
+.menu-list {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.menu-item {
+  display: flex;
+  align-items: baseline;
+  width: 100%;
+}
+
+.menu-info {
+  flex-shrink: 0;
+  padding-right: 1.5rem;
+  background: var(--cream); /* Hides leader behind text */
+  max-width: 70%;
+}
+
+.menu-name {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--charcoal);
+  margin-bottom: 0.4rem;
+}
+
+.menu-desc {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--charcoal-soft);
+  line-height: 1.5;
+}
+
+.menu-meta {
+  font-size: 0.8rem;
+  font-family: var(--font-body);
+  font-style: italic;
+  color: var(--taupe-dark);
+  font-weight: 400;
+  margin-left: 0.5rem;
+}
+
+.menu-leader {
+  flex-grow: 1;
+  border-bottom: 2px dotted var(--taupe);
+  position: relative;
+  top: -8px;
+  opacity: 0.6;
+}
+
+.menu-price {
+  flex-shrink: 0;
+  padding-left: 1.5rem;
+  font-family: var(--font-body);
+  font-size: 1.4rem;
+  color: var(--charcoal);
+  background: var(--cream); /* Hides leader behind text */
+}
+
+/* ===== Gallery ===== */
+.gallery { background: var(--white); }
+.gallery__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2vw; margin-top: 4rem; }
+.gallery__item { aspect-ratio: 1/1; overflow: hidden; position: relative; }
+.gallery__item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.8s var(--ease-out); }
+.gallery__item:hover img { transform: scale(1.05); }
+
+.gallery__caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(251, 249, 245, 0.9); /* --cream at 90% */
+  padding: 0.8rem;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  text-align: center;
+  color: var(--charcoal);
+  letter-spacing: 0.05em;
+  transform: translateY(100%);
+  transition: transform 0.4s var(--ease-out);
+}
+
+.gallery__item:hover .gallery__caption {
+  transform: translateY(0);
+}
+
+/* ===== Contact ===== */
+.info { background: var(--charcoal); color: var(--cream); }
+.info__grid { display: grid; grid-template-columns: 1fr 1px 1fr; gap: 4rem; text-align: center; }
+.info__divider-v { background: rgba(255,255,255,0.1); }
+.info .section__label { color: var(--taupe); }
+.info .section__title { color: var(--cream); }
+.info__hours-list { list-style: none; margin-top: 2rem; }
+.info__hours-list li {
+  display: flex; justify-content: space-between; padding: 1rem 0;
+  border-bottom: 1px solid rgba(255,255,255,0.05); color: var(--taupe);
+}
+.info__address {
+  margin-top: 2rem; line-height: 2.2; color: var(--taupe);
+}
+.info__address a { color: var(--cream); }
+
+/* ===== Footer ===== */
+.footer {
+  background: var(--charcoal);
+  padding: 3rem; text-align: center; border-top: 1px solid rgba(255,255,255,0.05);
+}
+.footer__text { font-size: 0.75rem; letter-spacing: 0.2rem; text-transform: uppercase; color: var(--taupe-dark); }
+
+/* ===== Animations ===== */
+.reveal { opacity: 0; transform: translateY(30px); transition: all 1s var(--ease-out); }
+.reveal.visible { opacity: 1; transform: translateY(0); }
+@keyframes scaleIn { from { opacity: 0; transform: scale(0.95); } to { opacity: 1; transform: scale(1); } }
+
+/* ===== Responsive ===== */
+@media (max-width: 900px) {
+  .header { padding: 1.5rem 2rem; }
+  .header__nav {
+    display: none; position: absolute; top: 100%; left: 0; right: 0;
+    background: var(--cream); flex-direction: column; padding: 2rem;
+    text-align: center; border-bottom: 1px solid var(--taupe);
+  }
+  .header__nav.mobile-open { display: flex; }
+  .nav__toggle { display: flex; }
+  
+  .center-logo-ring { width: 280px; height: 280px; }
+  .center-logo-script { font-size: 3rem; }
+  .center-logo-serif { font-size: 2rem; }
+  .about__grid { grid-template-columns: 1fr; gap: 3rem; }
+  .gallery__grid { grid-template-columns: 1fr; gap: 2rem; }
+  .info__grid { grid-template-columns: 1fr; }
+  .info__divider-v { display: none; }
+  
+  .menu-item { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
+  .menu-leader { display: none; }
+  .menu-price { padding-left: 0; }
+  .menu-info { max-width: 100%; }
+}

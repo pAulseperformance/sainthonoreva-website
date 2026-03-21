@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Saint Honoré Artisan Boulangerie</title>
+    <meta name="description" content="Premium artisan bakery offering sourdough boules, bagels, and pastries in Virginia." />
+    
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@200;300;400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-background": "#1b1c1a",
+                        "background": "#fbf9f5",
+                        "outline-variant": "#d1c5b8",
+                        "tertiary-fixed": "#e4e4cc",
+                        "surface-container-low": "#f5f3ef",
+                        "inverse-primary": "#dec1a6",
+                        "on-secondary": "#ffffff",
+                        "secondary-container": "#e4e2e1",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-container": "#494a38",
+                        "on-surface": "#1b1c1a",
+                        "tertiary-container": "#babaa3",
+                        "surface-container-high": "#eae8e4",
+                        "on-error": "#ffffff",
+                        "on-primary-fixed-variant": "#57432e",
+                        "on-tertiary": "#ffffff",
+                        "surface-bright": "#fbf9f5",
+                        "on-secondary-fixed": "#1b1c1c",
+                        "primary-fixed-dim": "#dec1a6",
+                        "surface-tint": "#705a44",
+                        "surface-variant": "#e4e2de",
+                        "on-primary": "#ffffff",
+                        "on-secondary-container": "#656464",
+                        "surface-container": "#efeeea",
+                        "tertiary": "#5e604d",
+                        "inverse-on-surface": "#f2f0ed",
+                        "surface": "#fbf9f5",
+                        "primary-fixed": "#fcddc0",
+                        "on-tertiary-fixed": "#1b1d0e",
+                        "primary-container": "#d0b499",
+                        "secondary-fixed": "#e4e2e1",
+                        "outline": "#7f766a",
+                        "surface-dim": "#dbdad6",
+                        "inverse-surface": "#30312e",
+                        "on-tertiary-fixed-variant": "#474836",
+                        "surface-container-highest": "#e4e2de",
+                        "on-surface-variant": "#4d453c",
+                        "error-container": "#ffdad6",
+                        "secondary": "#5f5e5e",
+                        "primary": "#705a44",
+                        "on-primary-fixed": "#281807",
+                        "on-primary-container": "#5a4530",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-fixed-variant": "#474747",
+                        "tertiary-fixed-dim": "#c8c8b0",
+                        "error": "#ba1a1a",
+                        "secondary-fixed-dim": "#c8c6c6"
+                    },
+                    fontFamily: {
+                        "headline": ["Noto Serif", "serif"],
+                        "body": ["Manrope", "sans-serif"],
+                        "label": ["Manrope", "sans-serif"],
+                        "abramo": ["Abramo", "Playfair Display", "serif"]
+                    },
+                    borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .hero-split-height {
+            height: 100vh;
+        }
+        @media (max-width: 768px) {
+            .hero-split-height {
+                height: auto;
+            }
+        }
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-primary-container selection:text-on-primary-container">
+
+<!-- TopNavBar -->
+<nav class="fixed top-0 left-0 w-full z-50 bg-[#fbf9f5]/80 backdrop-blur-xl px-8 py-6 max-w-full mx-auto">
+    <div class="flex items-center gap-2" aria-label="Brand Logo">
+        <span class="text-2xl whitespace-nowrap">
+            <span class="font-abramo italic text-[#705a44]">Saint</span>
+            <span class="font-headline font-normal text-[#7f766a] tracking-[0.15em] ml-[0.15em] uppercase text-sm">Honoré</span>
+        </span>
+    </div>
+    <div class="hidden md:flex items-center justify-center gap-12 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" role="navigation" aria-label="Main Navigation">
+        <a class="text-[#7f766a] font-medium hover:text-[#705a44] transition-colors duration-300 uppercase text-xs tracking-[0.15em]" href="#story">Our Story</a>
+        <a class="text-[#7f766a] font-medium hover:text-[#705a44] transition-colors duration-300 uppercase text-xs tracking-[0.15em]" href="#menu">Menu</a>
+        <a class="text-[#7f766a] font-medium hover:text-[#705a44] transition-colors duration-300 uppercase text-xs tracking-[0.15em]" href="#gallery">Gallery</a>
+        <a class="text-[#7f766a] font-medium hover:text-[#705a44] transition-colors duration-300 uppercase text-xs tracking-[0.15em]" href="#contact">Contact</a>
+    </div>
+</nav>
+
+<!-- Hero Section: 50/50 Split -->
+<section class="flex flex-col hero-split-height" aria-labelledby="hero-heading">
+    <h1 id="hero-heading" class="sr-only">Saint Honoré Artisan Boulangerie</h1>
+    <!-- Top Half: Solid Canvas with Logo Image -->
+    <div class="h-[50vh] bg-surface flex items-center justify-center relative pt-20">
+        <div class="relative z-10">
+            <img src="/images/logo_transparent.png" alt="Saint Honoré Artisan Boulangerie logo" class="w-64 h-64 md:w-80 md:h-80 object-contain" />
+        </div>
+    </div>
+    
+    <!-- Bottom Half: Full-Width Photo -->
+    <div class="h-[50vh] w-full overflow-hidden">
+        <img alt="Artisan baker shaping dough by hand" class="w-full h-full object-cover object-center" src="/images/craftsman.png"/>
+    </div>
+</section>
+
+<!-- Our Story Section -->
+<section id="story" class="bg-surface py-24 px-8 md:px-24 border-t border-outline/10">
+    <div class="max-w-5xl mx-auto flex flex-col md:flex-row gap-16 md:gap-32 items-center">
+        <div class="md:w-1/2">
+            <img src="/images/hero.png" alt="Interior of Saint Honoré Artisan Boulangerie" class="w-full aspect-[4/5] object-cover rounded-2xl shadow-sm" />
+        </div>
+        <div class="md:w-1/2">
+            <span class="font-label text-primary text-xs tracking-[0.2em] uppercase mb-4 block">Our Story</span>
+            <h2 class="font-headline text-4xl md:text-5xl text-on-background mb-8 leading-tight">A Passion for Honest Bread</h2>
+            <div class="w-12 h-px bg-outline/40 mb-8"></div>
+            <p class="font-body text-on-surface-variant leading-relaxed opacity-90 mb-6">
+                At Saint Honoré, we believe bread is more than sustenance — it is an art, a tradition, and a daily ritual that brings people together. Our bakers arrive before dawn to begin the slow, patient work of crafting each loaf by hand.
+            </p>
+            <p class="font-body text-on-surface-variant leading-relaxed opacity-90">
+                We source the finest French flours, use natural levain starters, and never rush the process. Every croissant is laminated with European butter. Every baguette earns its crust through long, cool fermentation.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Menu Section -->
+<section id="menu" class="bg-surface-container-low py-24 px-8 md:px-24">
+    <div class="max-w-5xl mx-auto">
+        <div class="flex flex-col md:flex-row gap-16 md:gap-32">
+            <!-- Title Column -->
+            <div class="md:w-1/3">
+                <span class="font-label text-primary text-xs tracking-[0.2em] uppercase mb-4 block">Hand-crafted selection</span>
+                <h2 class="font-headline text-5xl md:text-6xl text-on-background mb-8 -tracking-[0.02em]">Menu</h2>
+                <p class="font-body text-on-surface-variant leading-relaxed opacity-80 max-w-xs">
+                    Baked fresh daily. Experience the distinct crust and flavor of our slow-fermented, naturally leavened dough.
+                </p>
+            </div>
+            
+            <!-- Items Column -->
+            <div class="md:w-2/3 flex flex-col gap-12 pt-4" role="list" aria-label="Bakery Menu">
+                <!-- Item -->
+                <div class="flex justify-between items-baseline group" role="listitem">
+                    <div class="flex-1 border-b border-outline/30 border-dotted mr-4 pb-1">
+                        <h3 class="font-headline text-xl text-on-background">Plain Boule</h3>
+                        <p class="font-body text-sm text-on-surface-variant mt-1">Naturally leavened sourdough, slow-fermented</p>
+                    </div>
+                    <span class="font-headline text-xl text-primary">$12</span>
+                </div>
+                <!-- Item -->
+                <div class="flex justify-between items-baseline group" role="listitem">
+                    <div class="flex-1 border-b border-outline/30 border-dotted mr-4 pb-1">
+                        <h3 class="font-headline text-xl text-on-background">Blueberry Lemon Boule</h3>
+                        <p class="font-body text-sm text-on-surface-variant mt-1">Sourdough with fresh blueberries and lemon zest</p>
+                    </div>
+                    <span class="font-headline text-xl text-primary">$15</span>
+                </div>
+                <!-- Item -->
+                <div class="flex justify-between items-baseline group" role="listitem">
+                    <div class="flex-1 border-b border-outline/30 border-dotted mr-4 pb-1">
+                        <h3 class="font-headline text-xl text-on-background">Garlic and Rosemary Boule</h3>
+                        <p class="font-body text-sm text-on-surface-variant mt-1">Baked with roasted garlic and fragrant rosemary</p>
+                    </div>
+                    <span class="font-headline text-xl text-primary">$15</span>
+                </div>
+                <!-- Item -->
+                <div class="flex justify-between items-baseline group" role="listitem">
+                    <div class="flex-1 border-b border-outline/30 border-dotted mr-4 pb-1">
+                        <h3 class="font-headline text-xl text-on-background">Bagels</h3>
+                        <p class="font-body text-sm text-on-surface-variant mt-1">Plain, everything, or jalapeño cheddar (half dozen)</p>
+                    </div>
+                    <span class="font-headline text-xl text-primary">$10</span>
+                </div>
+                <!-- Item -->
+                <div class="flex justify-between items-baseline group" role="listitem">
+                    <div class="flex-1 border-b border-outline/30 border-dotted mr-4 pb-1">
+                        <h3 class="font-headline text-xl text-on-background">Chocolate Chip Cookies</h3>
+                        <p class="font-body text-sm text-on-surface-variant mt-1">Brown butter, sea salt, dark chocolate (8 count)</p>
+                    </div>
+                    <span class="font-headline text-xl text-primary">$15</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Gallery Section -->
+<section id="gallery" class="bg-surface py-24 px-8">
+    <div class="max-w-7xl mx-auto">
+        <div class="flex justify-between items-end mb-16">
+            <div>
+                <span class="font-label text-primary text-xs tracking-[0.2em] uppercase mb-4 block">Visual Story</span>
+                <h2 class="font-headline text-5xl text-on-background -tracking-[0.02em]">Gallery</h2>
+            </div>
+            <div class="hidden md:block">
+                <button class="group flex items-center gap-2 font-label text-sm tracking-widest text-primary uppercase" aria-label="Follow us on Instagram">
+                    Follow Us <span class="material-symbols-outlined transition-transform group-hover:translate-x-1" data-icon="arrow_forward">arrow_forward</span>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Bento-style Gallery (5 explicit slots for the menu items) -->
+        <div class="grid grid-cols-2 lg:grid-cols-5 gap-4">
+            
+            <figure class="aspect-square bg-surface-container-high rounded-xl overflow-hidden relative group hidden lg:block">
+                <img alt="Menu Item: Plain Boule" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" src="/images/pastries.png" />
+                <figcaption class="absolute bottom-4 left-4 right-4 bg-background/90 backdrop-blur-md px-3 py-2 text-xs font-label uppercase tracking-widest rounded text-center opacity-0 group-hover:opacity-100 transition-opacity">Plain Boule</figcaption>
+            </figure>
+            
+            <figure class="aspect-square bg-surface-container-high rounded-xl overflow-hidden relative group">
+                <img alt="Menu Item: Blueberry Lemon Boule" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" src="/images/hero.png" />
+                <figcaption class="absolute bottom-4 left-4 right-4 bg-background/90 backdrop-blur-md px-3 py-2 text-xs font-label uppercase tracking-widest rounded text-center opacity-0 group-hover:opacity-100 transition-opacity">Blueberry Boule</figcaption>
+            </figure>
+            
+            <figure class="aspect-square bg-surface-container-high rounded-xl overflow-hidden relative group">
+                <img alt="Menu Item: Garlic and Rosemary Boule" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" src="/images/pastries.png" />
+                <figcaption class="absolute bottom-4 left-4 right-4 bg-background/90 backdrop-blur-md px-3 py-2 text-xs font-label uppercase tracking-widest rounded text-center opacity-0 group-hover:opacity-100 transition-opacity">Garlic Boule</figcaption>
+            </figure>
+            
+            <figure class="aspect-square bg-surface-container-high rounded-xl overflow-hidden relative group">
+                <img alt="Menu Item: Bagels" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" src="/images/craftsman.png" />
+                <figcaption class="absolute bottom-4 left-4 right-4 bg-background/90 backdrop-blur-md px-3 py-2 text-xs font-label uppercase tracking-widest rounded text-center opacity-0 group-hover:opacity-100 transition-opacity">Bagels</figcaption>
+            </figure>
+            
+            <figure class="aspect-square bg-surface-container-high rounded-xl overflow-hidden relative group">
+                <img alt="Menu Item: Chocolate Chip Cookies" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" src="/images/pastries.png" />
+                <figcaption class="absolute bottom-4 left-4 right-4 bg-background/90 backdrop-blur-md px-3 py-2 text-xs font-label uppercase tracking-widest rounded text-center opacity-0 group-hover:opacity-100 transition-opacity">Cookies</figcaption>
+            </figure>
+            
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer id="contact" class="w-full py-20 px-8 flex flex-col md:flex-row justify-between items-center gap-8 bg-[#dbdad6] dark:bg-[#1b1c1a]">
+    <div class="flex flex-col items-center md:items-start text-center md:text-left">
+        <span class="text-2xl whitespace-nowrap mb-4">
+            <span class="font-abramo italic text-[#705a44]">Saint</span>
+            <span class="font-headline font-bold text-[#1b1c1a] dark:text-[#fbf9f5] tracking-wide ml-[0.1em] uppercase text-sm">Honoré</span>
+        </span>
+        <p class="font-body text-sm text-[#7f766a] dark:text-[#dbdad6] max-w-xs">
+            Virginia, United States
+        </p>
+        <p class="font-body text-sm text-[#705a44] font-medium mt-1">
+            <a href="mailto:hello@sainthonoreva.com">hello@sainthonoreva.com</a>
+        </p>
+    </div>
+    
+    <div class="flex gap-10">
+        <div class="flex flex-col gap-2">
+            <span class="font-label text-[10px] tracking-[0.2em] uppercase text-[#1b1c1a] dark:text-gray-400 mb-2">Hours</span>
+            <span class="text-[#7f766a] dark:text-[#dbdad6] text-sm">Mon-Fri: 7AM — 6PM</span>
+            <span class="text-[#7f766a] dark:text-[#dbdad6] text-sm">Saturday: 7AM — 5PM</span>
+            <span class="text-[#7f766a] dark:text-[#dbdad6] text-sm">Sunday: 8AM — 3PM</span>
+        </div>
+    </div>
+    
+    <div class="flex gap-4">
+        <p class="font-body text-sm text-[#7f766a] dark:text-[#dbdad6]">
+            © 2026 Saint Honoré Artisan Boulangerie
+        </p>
+    </div>
+</footer>
+
+<script>
+    // Smooth scroll navigation
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            if(targetId) {
+                const elem = document.getElementById(targetId);
+                if(elem) elem.scrollIntoView({behavior: 'smooth'});
+            }
+        });
+    });
+</script>
+
+</body>
+</html>

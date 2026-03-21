@@ -1,0 +1,42 @@
+# Agent configs (Task Master)
+.claude/
+.gemini/
+.mcp.json
+CLAUDE.md
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+dev-debug.log
+
+# Dependency directories
+node_modules/
+
+# Cloudflare
+.wrangler/
+
+# Environment variables
+.env
+.env.*
+
+# Task Master
+.taskmaster/
+
+# Dev artifacts
+prd.md
+stitch_mockup.html
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS specific
+.DS_Store
