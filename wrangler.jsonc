@@ -1,6 +1,7 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "saint-honore-va",
+  "account_id": "e8617db2b398140232c702f6fea134c5",
   "compatibility_date": "2025-01-01",
   "assets": {
     "directory": "./public"
