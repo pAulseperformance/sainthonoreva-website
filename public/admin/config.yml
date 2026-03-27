@@ -2,7 +2,7 @@ backend:
   name: github
   repo: pAulseperformance/sainthonoreva-website
   branch: main
-  base_url: https://saint-honore-auth.mrpmendes.workers.dev
+  base_url: https://auth.sainthonoreva.com
 
 media_folder: "public/images"
 public_folder: "/images"
